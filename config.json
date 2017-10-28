@@ -1,0 +1,19 @@
+{
+	"coin": "RISE",
+	"node": "https://wallet.rise.vision",
+	"nodepay": "http://localhost:5555",
+	"pubkey": "PUBKEY",
+	"percentage": 90,
+	"logfile": "poollogs.json",
+	"minpayout": 0.2,
+	"secret": "SECRET",
+	"secondsecret": "SECRET2",
+    "donations": {
+
+    },
+    "donationspercentage": {
+    },
+	"skip": [
+		
+    ]
+}
