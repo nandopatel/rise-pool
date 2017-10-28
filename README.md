@@ -5,14 +5,14 @@ This software is created by LISK delegate "dakk" which was then modified by me "
 ## Configuration
 Fork this repo; edit config.json and modify the first lines with your settings:
 
-- pubkey: your delegate pubkey (not address)
-- percentage: percentage to distribute
-- secret: your secret passphrase
-- secondsecret: your second secret passphrase or leave blank if disabled
+- pubkey: your delegate pubkey (not address) `8d26323cc49a312dd22aede7fcff8bc8924bb30b3e1ddede39043cb13826a4f8`
+- percentage: percentage to distribute `75`
+- secret: your secret passphrase `"word1 word2 word3..."`
+- secondsecret: your second secret passphrase or leave blank if disabled `"word1 word2 word3..."`
 - node: the lisk node where you get forging info eg: `https://wallet.rise.vision`
 - nodepay: the lisk node used for payments eg: `http://localhost:5555`
-- minpayout: the minimum amount for a payout
-- coin: the name of the coin (LISK, ARK, SHIFT, RISE, or whatever you want)
+- minpayout: the minimum amount for a payout `0.2`
+- coin: the name of the coin eg `RISE`
 - skip: a list of address' to skip
 - donations: a list of object (address: amount) for send static amount every payout
 - donationspercentage: a list of object (address: percentage) for send static percentage every payout
