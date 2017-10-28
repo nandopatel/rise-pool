@@ -1,39 +1,27 @@
-# Lisk pool distribution software
-This software is created by lisk delegate "dakk", please consider a small donation if you
-use this software: "2324852447570841050L" for lisk or "7725849364280821971S" for shift or
-"AZAXtswaWS4v8eYMzJRjpd5pN3wMBj8Rmk" for ark.
+# RISE pool distribution software
+This software is created by LISK delegate "dakk" which was then modified by me "spookiestevie" to work with RISE delegate pools
 
 
 ## Configuration
 Fork this repo; edit config.json and modify the first lines with your settings:
 
-- pubkey: your delegate pubkey
+- pubkey: your delegate pubkey (not address)
 - percentage: percentage to distribute
-- secret: your secret
-- secondsecret: your second secret or null if disabled
-- node: the lisk node where you get forging info
-- nodepay: the lisk node used for payments
+- secret: your secret passphrase
+- secondsecret: your second secret passphrase or leave blank if disabled
+- node: the lisk node where you get forging info eg: `https://wallet.rise.vision`
+- nodepay: the lisk node used for payments eg: `http://localhost:5555`
 - minpayout: the minimum amount for a payout
 - coin: the name of the coin (LISK, ARK, SHIFT, RISE, or whatever you want)
-- skip: a list of address to skip
+- skip: a list of address' to skip
 - donations: a list of object (address: amount) for send static amount every payout
 - donationspercentage: a list of object (address: percentage) for send static percentage every payout
 - logfile: file where you want to write pending and sent amounts
 
-Now edit docs/index.html and customize the webpage.
+You can edit docs/index.html and customize the webpage.
 
 Finally edit poollogs_example.json and put in lastpayout the unixtimestamp of your last payout or the
 date of pool starting; then move poollogs_example.json to poollogs.json.
-
-### Ark & Kapu
-If you are using this software on ark, you should edit pollogs_example_ark.json and put:
-
-- lastpayout: the unixtimestamp of your last payout or the date of pool starting 
-- lastforged: the forged amount recorded in your last payout or the forged amount of pool starting
-
-then move poollogs_example_ark.json to poollogs.json.
-
-Also, replace docs/index.html with docs/index.ark.html
 
 ## Running it
 
